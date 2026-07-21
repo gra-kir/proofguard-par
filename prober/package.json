@@ -1,0 +1,9 @@
+{
+  "name": "proofguard-prober",
+  "version": "0.2.0",
+  "description": "Independent x402 endpoint prober — reference implementation",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test-fix.js && node test-action-ref.js"
+  }
+}
