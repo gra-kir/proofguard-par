@@ -40,13 +40,12 @@ self-owned targets, so no ambiguity is introduced.
 | Attestor wallet (author) | `GDfyDptVYTHfumAN8DkaHx42qcer6JJphkjCkypuBDLS` |
 | 8004 registry program (mainnet) | `8oo4dC4JvBLwy5tGgiH3WwK4B9PWxL9Z4XjA2jzkQMbQ` |
 | Public indexer | `https://8004-indexer-main.qnt.sh` (SDK default) |
-| Receipt files | `https://solsigs.com/proofguard/receipts/{sha256}` |
+| Example receipt (live) | [open it](https://solsigs.com/proofguard/receipts/39e76d210d953299011958cad2e66014275abef68ea8ee1afd9403bd7df85583) — the receipt attested at feedback index 72 |
 
-A live one you can open right now — the receipt attested at feedback index 72:
-[`…39e76d210d953299011958cad2e66014275abef68ea8ee1afd9403bd7df85583`](https://solsigs.com/proofguard/receipts/39e76d210d953299011958cad2e66014275abef68ea8ee1afd9403bd7df85583)
-
-(The path must be exactly 64 hex characters — that is the receipt's own content
-hash. Anything else is not routed to the receipt store.)
+Receipts live under `https://solsigs.com/proofguard/receipts/` followed by the
+receipt's own sha256 — exactly 64 hex characters, which is why the URL is
+itself the integrity check. Checks 2 and 3 below get that hash from the chain
+for you, so you never need to construct one by hand.
 
 ## Setup
 

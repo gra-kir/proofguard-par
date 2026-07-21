@@ -79,12 +79,9 @@ POST https://solsigs.com/proofguard/attest   — 0.50 USDC, Solana mainnet
 POST https://solsigs.com/proofguard/evaluate — 0.003 USDC
 ```
 
-Receipts are published content-addressed at
-`https://solsigs.com/proofguard/receipts/{sha256}` and served immutable —
-the path is the receipt's own content hash, so the URL is the integrity check.
-
-Example (live):
-[`…39e76d21…f85583`](https://solsigs.com/proofguard/receipts/39e76d210d953299011958cad2e66014275abef68ea8ee1afd9403bd7df85583)
+Receipts are published content-addressed and served immutable — each URL ends
+in the receipt's own sha256, so the address is itself the integrity check.
+[Open a live one](https://solsigs.com/proofguard/receipts/39e76d210d953299011958cad2e66014275abef68ea8ee1afd9403bd7df85583).
 
 ## Design principles
 
