@@ -80,7 +80,11 @@ POST https://solsigs.com/proofguard/evaluate — 0.003 USDC
 ```
 
 Receipts are published content-addressed at
-`https://solsigs.com/proofguard/receipts/<sha256>` and served immutable.
+`https://solsigs.com/proofguard/receipts/{sha256}` and served immutable —
+the path is the receipt's own content hash, so the URL is the integrity check.
+
+Example (live):
+[`…39e76d21…f85583`](https://solsigs.com/proofguard/receipts/39e76d210d953299011958cad2e66014275abef68ea8ee1afd9403bd7df85583)
 
 ## Design principles
 

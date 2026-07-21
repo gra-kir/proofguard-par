@@ -94,7 +94,7 @@ Receipts embed the canonical receipt envelope v1.0 of the
   "preimage": {
     "agent_id": "proofguard.solsigs.com",
     "action_type": "x402.probe",
-    "scope": "proofguard:x402.probe:<target_url>",
+    "scope": "proofguard:x402.probe:https://solsigs.com/dex",
     "timestamp": "<probed_at, RFC 3339 UTC, 3-digit ms, Z>"
   }
 }
