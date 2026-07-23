@@ -10,7 +10,7 @@
  * SolSigs validator (validate-router.js, spec authority x402-foundation/x402
  * protocol V2, confirmed via VPS discovery 2026-07-01). It is implemented
  * independently here because the prober must never import from the
- * x402-swarm request path. Version-aware like the validator: V2 bodies get
+ * live payment service's request path. Version-aware like the validator: V2 bodies get
  * CAIP-2 network enforcement, top-level ResourceInfo, and the normative
  * PAYMENT-REQUIRED header check; V1 bodies get the permissive variants.
  */
